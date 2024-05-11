@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import WebFont from 'webfontloader';
 import { useTheme } from './theme/useTheme';
 import { GlobalStyles } from './theme/GlobalStyles';
+import ThemeSelector from './ThemeSelector';
 
 
 const Container = styled.div`
@@ -36,6 +37,7 @@ function App() {
             This is a theming system with a Theme Switcher and a Theme Builder.
             Do you want to see the source code? <a href="https://github.com/TeodoraAlina/theme-builder" target="_blank">Click here.</a>
           </p>
+          <ThemeSelector setter={ setSelectedTheme} />
         </Container>
       </ThemeProvider>
     }
